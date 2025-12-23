@@ -1,0 +1,33 @@
+{
+  "name": "gabrielfrdev/passhash",
+  "description": "CLI tool to generate and verify secure password hashes",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PassHash\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PassHash\\Tests\\": "tests/"
+    }
+  },
+  "bin": [
+    "bin/passhash"
+  ],
+  "scripts": {
+    "test": "phpunit"
+  },
+  "authors": [
+    {
+      "name": "Gabriel Ferreira",
+      "email": "153218445+gabrielfrdev@users.noreply.github.com"
+    }
+  ]
+}
