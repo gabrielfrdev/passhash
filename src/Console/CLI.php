@@ -140,8 +140,16 @@ class CLI
 
     private function showHelp(): void
     {
+        $version = 'v1.0.0';
+        try {
+            if (class_exists('\Composer\InstalledVersions')) {
+                $version = \Composer\InstalledVersions::getPrettyVersion('gabrielfrdev/secure-passhash') ?? $version;
+            }
+        } catch (Throwable $e) {
+        }
+
         echo <<<HELP
-\033[1;36mPassHash CLI\033[0m v1.0.0 (Secure Mode)
+\033[1;36mPassHash CLI\033[0m $version (Secure Mode)
 
 \033[1mCommands:\033[0m
   hash        Generate secure hash (Interactive/Pipe only)
@@ -155,6 +163,8 @@ class CLI
   passhash hash
   echo "secret" | passhash hash
   passhash verify '\$argon2id\$...'
+
+\033[1;30mReplace 'passhash' with './bin/passhash' or 'vendor/bin/passhash' based on your install.\033[0m
 
 HELP;
     }

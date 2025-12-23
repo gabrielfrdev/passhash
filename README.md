@@ -25,6 +25,16 @@ cd secure-passhash
 composer install
 ```
 
+## 🚀 Executable Location
+
+Dependendo de como você instalou, o executável estará em um lugar diferente:
+
+- **Instalação Global**: `passhash`
+- **Instalação Local (Composer)**: `vendor/bin/passhash`
+- **Pelo Código Fonte**: `./bin/passhash`
+
+_Nos exemplos abaixo, usaremos `./bin/passhash`, substitua pelo comando correspondente ao seu modo de instalação._
+
 ## 🛠 Usage
 
 ### 1. Generating a Hash
