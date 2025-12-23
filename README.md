@@ -14,14 +14,14 @@
 ### Global (Quick Use)
 
 ```bash
-composer global require gabrielfrdev/passhash
+composer global require gabrielfrdev/secure-passhash
 ```
 
 ### Local (Development)
 
 ```bash
-git clone https://github.com/gabrielfrdev/passhash.git
-cd passhash
+git clone https://github.com/gabrielfrdev/secure-passhash.git
+cd secure-passhash
 composer install
 ```
 

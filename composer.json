@@ -1,6 +1,6 @@
 {
-  "name": "gabrielfrdev/passhash",
-  "description": "CLI tool to generate and verify secure password hashes",
+  "name": "gabrielfrdev/secure-passhash",
+  "description": "Secure CLI password hashing with Argon2id - Production-ready tool with strict security validation",
   "license": "MIT",
   "require": {
     "php": ">=8.1"
